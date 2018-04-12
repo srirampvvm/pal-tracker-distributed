@@ -101,7 +101,7 @@ jobs:
       DATABASE_NAME: {{allocations-database-name}}
       DATABASE_USERNAME: {{allocations-database-username}}
       DATABASE_PASSWORD: {{allocations-database-password}}
-      LOCATION: {{allocation-location}}
+      LOCATION: {{allocations-location}}
   - get: allocations-artifacts
     trigger: false
   - put: cf
