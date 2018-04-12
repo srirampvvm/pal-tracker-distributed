@@ -101,6 +101,7 @@ jobs:
       DATABASE_NAME: {{allocations-database-name}}
       DATABASE_USERNAME: {{allocations-database-username}}
       DATABASE_PASSWORD: {{allocations-database-password}}
+      LOCATION: {{allocation-location}}
   - get: allocations-artifacts
     trigger: false
   - put: cf
@@ -126,6 +127,7 @@ jobs:
       DATABASE_NAME: {{backlog-database-name}}
       DATABASE_USERNAME: {{backlog-database-username}}
       DATABASE_PASSWORD: {{backlog-database-password}}
+      LOCATION: {{backlog-location}}
   - get: backlog-artifacts
     trigger: false
   - put: cf
@@ -151,6 +153,7 @@ jobs:
       DATABASE_NAME: {{registration-database-name}}
       DATABASE_USERNAME: {{registration-database-username}}
       DATABASE_PASSWORD: {{registration-database-password}}
+      LOCATION: {{registration-location}}
   - get: registration-artifacts
     trigger: false
   - put: cf
@@ -176,6 +179,7 @@ jobs:
       DATABASE_NAME: {{timesheets-database-name}}
       DATABASE_USERNAME: {{timesheets-database-username}}
       DATABASE_PASSWORD: {{timesheets-database-password}}
+      LOCATION: {{timesheets-location}}
   - get: timesheets-artifacts
     trigger: false
   - put: cf
