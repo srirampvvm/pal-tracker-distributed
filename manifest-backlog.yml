@@ -1,10 +1,10 @@
 applications:
 - name: tracker-backlog
   path: ./applications/backlog-server/build/libs/backlog-server.jar
-  host: backlog-pal-kp
+  host: backlog-pal-pm
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-kp.apps.longs.pal.pivotal.io
+    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-pm.apps.longs.pal.pivotal.io
   services:
   - tracker-backlog-database
